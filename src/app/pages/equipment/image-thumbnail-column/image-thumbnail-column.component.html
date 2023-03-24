@@ -1,0 +1,6 @@
+<div *ngIf="isPhotoIdAvailable">
+    <img [src]="imagePath" style="height: 100px; width: 100px;"/>
+</div>
+<div *ngIf="!isPhotoIdAvailable">
+    <button  nbButton status="danger" (click)="addImage()">Upload Image</button>
+</div>
